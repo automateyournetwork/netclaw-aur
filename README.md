@@ -36,6 +36,10 @@ Removing the package removes the packaged command, desktop entry and source snap
 
 ## Publishing
 
+Validation on 2026-10-14 used an Arch Linux x86_64 container under emulation on macOS. `makepkg` built `netclaw-1.10.0-1-any.pkg.tar.zst`; all 10 workspace regression tests, Bash syntax checks and desktop entry validation passed. Package installation, wrapper help, upstream help, installer help and component listing passed. The installed source matched its manifest, and package removal preserved the user's workspace. No credentials or real network integrations were used in these checks.
+
+Complete runtime onboarding, live integrations and installation through the published AUR entry remain unverified. The Omarchy proposal stays a draft while those prerequisites are addressed.
+
 The maintainer needs an AUR account and a registered SSH public key. AUR receives the recipe and supporting text files, not the built binary, downloaded source archive, test logs or screenshots. Once authenticated, publish `PKGBUILD`, `.SRCINFO`, `netclaw`, `netclaw.desktop`, `launcher.py`, `test_launcher.py`, and `LICENSE` to `ssh://aur@aur.archlinux.org/netclaw.git`.
 
 Do not mark the Omarchy install entry ready until this package is published and the real install and desktop flow have been verified. There is no migration or default installation in the revised Omarchy proposal.
