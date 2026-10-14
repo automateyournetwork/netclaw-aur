@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=NetClaw
+Comment=Network engineering agent
+Exec=netclaw
+Icon=network-workgroup
+Terminal=true
+Categories=Network;
+Keywords=network;automation;agent;

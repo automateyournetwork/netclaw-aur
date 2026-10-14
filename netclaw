@@ -1,0 +1,3 @@
+#!/bin/bash
+set -euo pipefail
+exec /usr/bin/python /usr/lib/netclaw/launcher.py "$@"

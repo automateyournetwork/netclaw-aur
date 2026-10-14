@@ -1,0 +1,7 @@
+downloads/
+src/
+pkg/
+*.tar.gz
+*.pkg.tar.*
+__pycache__/
+validation/

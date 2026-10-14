@@ -1,0 +1,36 @@
+pkgbase = netclaw
+	pkgdesc = Network engineering agent with optional, user-selected runtime and integrations
+	pkgver = 1.10.0
+	pkgrel = 1
+	url = https://github.com/automateyournetwork/netclaw
+	arch = any
+	license = Apache-2.0
+	license = 0BSD
+	checkdepends = desktop-file-utils
+	depends = bash
+	depends = python>=3.11
+	depends = git
+	depends = curl
+	depends = coreutils
+	depends = nodejs>=22
+	depends = npm
+	depends = uv
+	options = !strip
+	options = !debug
+	options = !purge
+	options = libtool
+	options = staticlibs
+	source = netclaw-1.10.0.tar.gz::https://github.com/automateyournetwork/netclaw/archive/eb5475e46c7339bb289228d2017b3c20be209fe3.tar.gz
+	source = netclaw
+	source = netclaw.desktop
+	source = launcher.py
+	source = test_launcher.py
+	source = LICENSE
+	sha256sums = 708dd2d113cd077e6d67c1954f1401efdf11be20221c1cb600fa520cafb64528
+	sha256sums = c45225a6c1e9faf64761389b3e2405c5b747a932145d2a0ad8b338f67fd397f0
+	sha256sums = 17786f8ccb26c4ccf5ffbf8b923ec1137a3234fa1044edfbf2c54c475760f3be
+	sha256sums = 99dcefc0b8f8cc1c95060c2ed220c17ff8433a629fbea8e5df43611f78a2349e
+	sha256sums = c8952acc2bb529f37837da93d609658de7c22e985ad82e2e3502bdbc4175fab8
+	sha256sums = 6097e39049c27d089a23606490d089aed57d14e3a9d6601504386fb34f2cb47f
+
+pkgname = netclaw
